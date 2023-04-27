@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <%- include('./common/header.ejs')%>
+   
+    <div class="contact_info mt-5  py-5">
+
+  <div class="container">
+    <div class="row">
+     
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <img src="image/Contact-Us.jpg" class="img-fluid">
+      </div> 
+    </div>
+  </div>
+</div>
+
+ <!-- CONTACT SECTION START  -->
+<!-- <div class="contact"> -->
+  <div class="container-fluid py-5" >
+    <div class="row py-3">
+
+      <div class="col-lg-5 col-md-12 col-sm-12 col-12 mx-auto text-center">
+        <h2 class="h2_contact text-dark">Get In Touch</h2>
+      </div>
+
+    </div>
+
+
+    <div class="row py-2">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 border-end border-dark bg-dark ">
+        <h4 class="h2_ct text-uppercase fw-light lead text-white">Contact</h4>
+        <h6 class="fw-light lead text-white">Looking forward to hearing from you</h6>
+        <h4 class="text-white">Phone</h4>
+        <h6 class="fw-light lead "><a class="text-decoration-none text-warning" type="button" href="tel:011-34343467;">Contact us :-
+            +011-34343467</a></h6>
+        <h4 class="text-white">Email</h4>
+        <h6 class="fw-light lead text-white">prvn729@gmail.com</h6>
+
+        <ul class="navbar-nav">
+          <a class="text-dark fs-2" href="https://www.facebook.com/parulstylo"><i class="bi bi-facebook"></i></a>
+          <a class="text-dark fs-2" href="https://wa.link/pvstfc"><i class="bi bi-whatsapp"></i></a>
+          <a class="text-dark fs-2" href="http://Instagram.com/THEPARULCHAUHAN"><i class="bi bi-instagram"></i></a>
+          <a class="text-dark fs-2" href="mailto: prvn729@gmail.com"><i class="bi bi-envelope"></i></a>
+        </ul>
+
+      </div>
+
+      <div class="col-lg-6  col-md-12 col-sm-12 col-12 ms-auto ">
+
+        <form class="ms-auto " method="post" action="/contact">
+          <div class="mb-3 ">
+            <label class="form-label">Email address </label>
+            <input type="email" name="email" class="form-control  border rounded-0" 
+              aria-describedby="emailHelp" placeholder="enter your email" >
+
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">location</label>
+            <input type="text" name="location" class="form-control border rounded-0">
+
+          </div>
+
+          <p class="text-center  tarea"><button type="submit" class="btn mt-lg-2   btn-dark btn-lg rounded-0">SUBMIT</button>
+          <p>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- </div> -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<%- include('./common/footer.ejs')%>
+
+</body>
+</html>

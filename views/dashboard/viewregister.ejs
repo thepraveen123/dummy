@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <%- include('./header.ejs')%>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <%- include('./left.ejs')%>
+        </div>
+        <div class="col-lg-10">
+            
+          <% if(data.length>0) { %>
+            
+            <table class="table table-bordered ">
+
+
+                <tr>
+                    <th>id</th>
+                  <th>name</th>
+                  <th>email </th>
+                  <th> password</th>
+                  <th>number</th>
+                  <th>action</th>
+               
+                </tr>
+            <% for(var i=0; i<data.length; i++) { %>
+                <tr>
+                    <td>  <%= i %>  </td>
+                    <td> <%= data[i].name %> </td>
+                    <td> <%= data[i].email %> </td>
+                    <td> <%= data[i].password %> </td>
+                    <td> <%= data[i].number %> </td>
+                    <td> <a href="/remove/<%= data[i]._id %>" role="button">delete</a> 
+                       <a href="/show/<%= data[i]._id %>" role="button">show</a>
+                       <a href="/edit/<%= data[i]._id %>" role="button">edit</a>
+                    </td>
+                    
+                </tr>
+
+              <% } %>
+
+                <% } else { %>
+                    <h2>no record found</h2>
+                    <% } %>
+             
+                  
+                  </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
